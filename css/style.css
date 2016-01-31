@@ -1,5 +1,53 @@
+@font-face {
+    font-family: OpenSansBold; 
+    src: url(../fonts/OpenSans-Bold.ttf); 
+}
+@font-face {
+    font-family: PtSans; 
+    src: url(../fonts/PT_Sans.ttf); 
+}
+
 #main_google_map {
   width: 1200px;
   height: 475px;
   background-color: #CCC;
+}
+body {
+  font-family: PtSans;
+  font-size: 14px;
+  line-height: 21px;
+  color:333333;
+  font-weight:normal;
+}
+.main-reason-feature {
+  font-family: PtSans;
+  font-size:21px;
+  line-height: 26px;
+  color:black;
+  font-weight: bold;
+}
+.main-feature-blue b {
+  font-family: PtSans;
+  font-size:21px;
+  line-height: 21px;
+  color:white;
+  font-weight: bold;
+}
+.intro {
+  height:800px;
+  background-image:url(../img/index-background.jpg);
+  background-size: 1200px 800px
+}
+.hotels-search-params {
+  height:215px;
+  background-image:url(../img/filter-background.jpg);
+  background-size: 1200px 215px
+}
+.left, .middle, .right {
+  float:left;
+}
+.clearfix::after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+    clear: both;
 }

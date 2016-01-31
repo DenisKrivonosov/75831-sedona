@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Sedona hotels</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -28,29 +28,33 @@
       </nav>
     </header>
     <main class="hotels-content">
-      <div class="hotels-search-params">
+      <div class="hotels-search-params clearfix">
         <form>
           <div class="hotels-search-params left">
             <span>Инфраструктура:</span>
             <ul>
-              <li><label><input type="checkbox">Бассейн</label></li>
-              <li><label><input type="checkbox">Парковка</label></li>
-              <li><label><input type="checkbox">Wi-fi</label></li>
+              <li><label for="pool">Бассейн</label><input id="pool" type="checkbox"></li>
+              <li><label for="parking">Парковка</label><input id="parking" type="checkbox"></li>
+              <li><label for="wifi">Wi-fi</lable><input id="wifi" type="checkbox"></li>
             </ul>
           </div>
           <div class="hotels-search-params middle">
             <span>Тип жилья:</span>
             <ul>
-              <li><label><input type="checkbox">Гостиница</label></li>
-              <li><label><input type="checkbox">Мотель</label></li>
-              <li><label><input type="checkbox">Апартаменты</label></li>
+              <li><label for="hotel">Гостиница</label><input id="hotel" type="checkbox"></li>
+              <li><label for="motel">Мотель</label><input id="motel" type="checkbox"></li>
+              <li><label for="apart">Апартаменты</label><input id="apart" type="checkbox"></li>
             </ul>
           </div>
           <div class="hotels-search-params right">
             <span>Стоимость в сутки (р):</span>
             <div class="hotels-search-prices">
-              <span>От 0</span>
-              <span>До 3000</span>
+              <div>ОТ
+                <input>0</input>
+              </div>
+              <div>ДО
+                <input>3000</input>\
+              </div>
             </div>
             <div class="hotels-rheostat">
               <div class="rheostat-handle-left"></div>
@@ -74,7 +78,7 @@
         </ul>
         </div>
         <div class="hotels-search-place">
-          <div class="search-place-left"><img src="http://placehold.it/135x90" alt="hotel ploto"></div>
+          <div class="search-place-left"><img src="img/amara-resort.jpg" alt="hotel ploto"></div>
           <div class="search-place-middle">
             <b class="hotel-name">Amara resort & spa</b>
             <span class="hotel-type">гостиница</span>
@@ -88,7 +92,7 @@
           </div>
         </div>
         <div class="hotels-search-place">
-          <div class="search-place-left"><img src="http://placehold.it/135x90" alt="hotel ploto"></div>
+          <div class="search-place-left"><img src="img/desert-quali.jpg" alt="hotel ploto"></div>
           <div class="search-place-middle">
             <b class="hotel-name">Desert quail inn</b>
             <span class="hotel-type">мотель</span>
@@ -102,7 +106,7 @@
           </div>
         </div>
         <div class="hotels-search-place">
-          <div class="search-place-left"><img src="http://placehold.it/135x90" alt="hotel ploto"></div>
+          <div class="search-place-left"><img src="img/villas-at-poco.jpg" alt="hotel ploto"></div>
           <div class="search-place-middle">
             <b class="hotel-name">Villas at poco</b>
             <span class="hotel-type">Апартаменты</span>
