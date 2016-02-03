@@ -29,7 +29,7 @@
     </header>
     <main class="main-container">
         <div class="intro">
-          <img src="img/greetings.png">
+          <img class="testtest" src="img/greetings.png">
         </div>
       <b class="main-reason-feature">Седона - небольшой городок в Аризоне,
           Заслуживающий большего!
@@ -38,7 +38,7 @@
       <div class="main-content">
         <div class="main-content-feature main-content-feature-blue">
           <b>Настоящий городок</b>
-          <span>№1</span>
+          <b>№1</b>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="sedona-photo">
@@ -70,24 +70,24 @@
          <img src="img/canyon-photo.jpg"></div>
         <div class="main-feature main-feature-blue">
           <b>Там есть мост дьявола</b>
-          <span>№2</span>
+          <b>№2</b>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <div class="main-content">
         <div class="main-feature main-feature-grey">
           <b>Небольшая площадь</b>
-          <span>№3</span>
+          <b>№3</b>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="main-feature main-feature-grey">
           <b>Красивая дорога</b>
-          <span>№4</span>
+          <b>№4</b>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="main-feature main-feature-grey">
           <b>Мало туристов</b>
-          <span>№5</span>
+          <b>№5</b>
           <p>Большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
@@ -100,19 +100,15 @@
               Поиск гостиницы в седоне
             </div>
             <form class="popup-form">
-              <label>
-                Дата заезда:
-                <input class="date-input" type=text value="24 апреля 2016">
-              </label>
-              <label>
-                Дата выезда:
-                <input class="date-input" type=text value="4 июля 2016">
-              </label>
+              <label for="in-date">Дата заезда:</label>
+              <input class="date-input" id="in-date" type=text value="24 апреля 2016">
+              <label for="out-date">Дата выезда:</label>
+              <input class="date-input" id="out-date" type=text value="4 июля 2016">
               <label for="adult-count">Взрослые:</label>
               <button type="button" class="remove-adult"></button>
               <input class="adult-count" id="adult-count" value="2">
               <button type="button" class="add-adult"></button>
-              <label for="child-count">Дети:</span>
+              <label for="child-count">Дети:</label>
               <button type="button" class="child-adult"></button>
               <input class="child-count" id="child-count" value="0">
               <button type="button" class="add-child"></button>

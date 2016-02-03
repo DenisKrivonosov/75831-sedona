@@ -51,3 +51,11 @@ body {
     display: table; /* 2 */
     clear: both;
 }
+.main-container {
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.testtest {
+  display:block;
+}
