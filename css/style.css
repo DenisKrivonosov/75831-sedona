@@ -13,18 +13,98 @@
   background-color: #CCC;
 }
 body {
+  background-color:#f2f2f2;
+  min-width: 768px;
+  max-width: 1200px;
   font-family: PtSans;
   font-size: 14px;
   line-height: 21px;
   color:333333;
   font-weight:normal;
+  margin:auto;
 }
-.main-reason-feature {
+.header {
+  margin: 0 auto;
+  width:100%;
+  background-color:white;
+}
+.header-navigation ul li {
+  width:20%;
+  height:54px;
+  line-height: 54px;
+  list-style: none;
+  text-align:center;
+  font-family: PtSans;
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+.header-navigation ul li a {
+    text-decoration:none;
+      color:black;
+}
+.header-navigation ul li.logo {
+  width:138px;
+  position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+}
+.intro {
+  height:510px;
+  padding-top:75px;
+  background-image:  url(../img/intro-shape.png), url(../img/intro-background.jpg);
+    background-position:bottom, center;
+    background-repeat: no-repeat, no-repeat;
+    margin-bottom:55px;
+}
+main {
+  background-color:white;
+}
+.main-feature {
+  width:33.3%;
+  height:254px;
+}
+.main-content.white {
+  background-color: white;
+  color:black;
+}
+.main-content.blue {
+  background-color: #81b3d2;
+  color:white;
+}
+.main-content.grey {
+  background-color: #eeeeee;
+  color:black;
+}
+.sedona-photo {
+  width:66%;
+  height:100%;
+}
+.sedona-photo img {
+  width:100%;
+}
+.main-content-picture img {
+  display: block;
+  margin: 0 auto;
+}
+b.main-reason-feature {
+  display:block;
+  text-align: center;
+  width:445px;
+  margin: 0 auto;
   font-family: PtSans;
   font-size:21px;
   line-height: 26px;
   color:black;
   font-weight: bold;
+}
+p.main-reason-feature {
+  text-align: center;
+  margin: 0 auto;
+  font-family: PtSans;
+  font-size:14px;
 }
 .main-feature-blue b {
   font-family: PtSans;
@@ -33,18 +113,21 @@ body {
   color:white;
   font-weight: bold;
 }
-.intro {
-  height:800px;
-  background-image:url(../img/index-background.jpg);
-  background-size: 1200px 800px
+
+.main-greetings {
+  display: block;
+  margin: 0 auto;
 }
 .hotels-search-params {
   height:215px;
   background-image:url(../img/filter-background.jpg);
   background-size: 1200px 215px
 }
-.left, .middle, .right {
+.left {
   float:left;
+}
+.right {
+  float: right;
 }
 .clearfix::after {
     content: " "; /* 1 */
@@ -52,10 +135,9 @@ body {
     clear: both;
 }
 .main-container {
-  min-width: 768px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .testtest {
   display:block;
 }
+
