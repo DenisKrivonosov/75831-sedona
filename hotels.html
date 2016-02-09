@@ -7,21 +7,21 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header-navigation">
+      <nav class="header-navigation clearfix">
         <ul>
-          <li>
+          <li class="left">
             <a href="#">Информация</a>
           </li>
-          <li>
+          <li class="left">
             <a href="#">Фото и видео</a>
-          </li>
+          </li left>
           <li class="logo">
+            <a href="#"><img src="img/sedona-logo.png"></a>
+          </li>
+          <li class="right">
             <a href="#">Карта штата</a>
           </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li>
+          <li class="right">
             <a href="#">Гостиницы</a>
           </li>
         </ul>
@@ -37,8 +37,6 @@
               <li><label for="parking">Парковка</label><input id="parking" type="checkbox"></li>
               <li><label for="wifi">Wi-fi</lable><input id="wifi" type="checkbox"></li>
             </ul>
-          </div>
-          <div class="hotels-search-params middle">
             <b>Тип жилья:</b>
             <ul>
               <li><label for="hotel">Гостиница</label><input id="hotel" type="checkbox"></li>
@@ -46,7 +44,7 @@
               <li><label for="apart">Апартаменты</label><input id="apart" type="checkbox"></li>
             </ul>
           </div>
-          <div class="hotels-search-params right">
+          <div class="hotels-search-params left">
             <b>Стоимость в сутки (р):</b>
             <div class="hotels-search-prices">
               <div>ОТ
@@ -66,75 +64,92 @@
         </form>
       </div>
       <div class="hotels-search-result">
-        <div class="result-sort">
-          <div class="hotels-search-count">Найдено:3</div>
-          <div class="hotels-search-count">Сортировка:</div>
-          <ul>
-            <li class="hotels-search-sort"><a href="#">По цене</a></li>
-            <li class="hotels-search-sort"><a href="#">По типу</a></li>
-            <li class="hotels-search-sort"><a href="#">По рейтингу</a></li>
-            <li class="hotels-search-sort asc"><a href="#"></a></li>
-            <li class="hotels-search-sort desc"><a href="#"></a></li>
+        <div class="result-sort clearfix">
+          <div class="hotels-search-found left">Найдено:3</div>
+          <div class="hotels-search-count left">Сортировка:</div>
+          <ul class="clearfix">
+            <li class="hotels-search-sort left"><a href="#">По цене</a></li>
+            <li class="hotels-search-sort left"><a href="#">По типу</a></li>
+            <li class="hotels-search-sort left"><a href="#">По рейтингу</a></li>
+            <li class="hotels-search-sort desc right"><a href="#"></a></li>
+            <li class="hotels-search-sort asc right"><a href="#"></a></li>
+            
         </ul>
         </div>
-        <div class="hotels-search-place">
-          <div class="search-place-left"><img src="img/amara-resort.jpg" alt="hotel ploto"></div>
-          <div class="search-place-middle">
-            <b class="hotel-name">Amara resort & spa</b>
-            <div class="hotel-type">гостиница</div>
-            <div class="hotel-price">от 3500 р.</div>
-            <a href="#" class="button">Подробнее</a>
-            <a href="#" class="button">Забронировать</a>
+        <div class="hotels-search-place clearfix">
+          <div class="search-place-left left clearfix">
+            <div class="search-place-photo left"><img src="img/amara-resort.jpg" alt="hotel ploto"></div>
+            <div class="search-place-info left">
+              <b class="hotel-name">Amara resort & spa</b>
+              <div class="wraper">
+                <div class="hotel-type ">гостиница</div>
+                <div class="hotel-price ">от 3500 р.</div>
+              </div>
+              <a href="#" class="button more">Подробнее</a>
+              <a href="#" class="button order">Забронировать</a>
+            </div>
           </div>
-          <div class="search-place-right">
-            <div class="hotel-stars"></div>
-            <div class="hotel-rating">Рейтинг:8,5</div>
-          </div>
-        </div>
-        <div class="hotels-search-place">
-          <div class="search-place-left"><img src="img/desert-quali.jpg" alt="hotel ploto"></div>
-          <div class="search-place-middle">
-            <b class="hotel-name">Desert quail inn</b>
-            <div class="hotel-type">мотель</div>
-            <div class="hotel-price">от 2000 р.</div>
-            <a href="#" class="button">Подробнее</a>
-            <a href="#" class="button">Забронировать</a>
-          </div>
-          <div class="search-place-right">
-            <div class="hotel-stars"></div>
-            <div class="hotel-rating">Рейтинг8,9</div>
+          <div class="search-place-right left clearfix">
+            <div class="hotel-stars clearfix"><img class="right" src="img/4stars.png"></div>
+            <div class="hotel-rating right">Рейтинг:8,5</div>
           </div>
         </div>
-        <div class="hotels-search-place">
-          <div class="search-place-left"><img src="img/villas-at-poco.jpg" alt="hotel ploto"></div>
-          <div class="search-place-middle">
-            <b class="hotel-name">Villas at poco</b>
-            <div class="hotel-type">Апартаменты</div>
-            <div class="hotel-price">от 4000 р.</div>
-            <a href="#" class="button">Подробнее</a>
-            <a href="#" class="button">Забронировать</a>
+        <div class="hotels-search-place clearfix">
+          <div class="search-place-left left clearfix">
+            <div class="search-place-photo left"><img src="img/desert-quali.jpg" alt="hotel ploto"></div>
+            <div class="search-place-info left">
+              <b class="hotel-name">Desert quail inn</b>
+              <div class="wraper">
+                <div class="hotel-type">мотель</div>
+                <div class="hotel-price">от 2000 р.</div>
+              </div>
+              <a href="#" class="button more">Подробнее</a>
+              <a href="#" class="button order">Забронировать</a>
+            </div>
           </div>
-          <div class="search-place-right">
-            <div class="hotel-stars"></div>
-            <div class="hotel-rating">Рейтинг:9,2</div>
+          <div class="search-place-right left clearfix">
+            <div class="hotel-stars clearfix"><img class="right" src="img/2stars.png"></div>
+            <div class="hotel-rating right">Рейтинг8,9</div>
+          </div>
+        </div>
+        <div class="hotels-search-place clearfix">
+          <div class="search-place-left clearfix left">
+            <div class="search-place-photo left"><img src="img/villas-at-poco.jpg" alt="hotel ploto"></div>
+            <div class="search-place-info left">
+              <b class="hotel-name">Villas at poco</b>
+              <div class="wraper">
+                <div class="hotel-type">Апартаменты</div>
+                <div class="hotel-price">от 4000 р.</div>
+              </div>
+              <a href="#" class="button more">Подробнее</a>
+              <a href="#" class="button order">Забронировать</a>
+            </div>
+          </div>
+          <div class="search-place-right clearfix left">
+            <div class="hotel-stars clearfix"><img class="right" src="img/3stars.png"></div>
+            <div class="hotel-rating right">Рейтинг:9,2</div>
           </div>
         </div>
       </div>
       
     </main>
-    <footer class="footer">
+    <footer class="footer hotels clearfix">
       <div class="footer-container">
-        <section class="footer-hashtags">
+        <section class="footer-hashtags left">
           <a href="#">#visitsedona</a>
         </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#"><img src="http://placehold.it/20x20"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="http://placehold.it/20x20"></a>
-          <a class="social-btn social-btn-yt" href="#"><img src="http://placehold.it/20x20"></a>
+        <section class="footer-social left">
+          <div class="social-buttons clearfix">
+            <a class="social-btn social-btn-tw left" href="#"></a>
+            <a class="social-btn social-btn-fb left" href="#"></a>
+            <a class="social-btn social-btn-yt left" href="#"></a>
+        </div>
         </section>
-        <section class="footer-copyright">
-          <p>website by</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        <section class="footer-copyright left">
+          <div class="copyright-content clearfix">
+            <div class="left cop-text">website by</div>
+            <a class="left" href="https://htmlacademy.ru"><img src="img/html-academy-logo.png"></a>
+        </div>
         </section>
       </div>
     </footer>

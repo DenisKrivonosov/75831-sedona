@@ -45,34 +45,34 @@
           <img src="img/true-city-photo.jpg">
         </div>
       </div>
-      <div class="main-content white clearfix">
-        <div class="main-feature left">
+      <div class="main-content clearfix">
+        <div class="main-feature white left">
           <div class="main-content-picture"><img src="img/index-house.png"></div>
             <b>Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
         </div>
-        <div class="main-feature  left">
+        <div class="main-feature white left">
           <div class="main-content-picture"> <img src="img/index-burger.png"></div>
           <b>Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
-        <div class="main-feature  left">
+        <div class="main-feature white left">
           <div class="main-content-picture"> <img src="img/index-gift.png"></div>
           <b>Сувениры</b>
-            <p>Не только китайского, но и местного производства!</p>
+          <p>Не только китайского, но и местного производства!</p>
         </div>
       </div>
-      <div class="main-content blue clearfix">
+      <div class="main-content  clearfix">
         <div class="sedona-photo left">
          <img src="img/canyon-photo.jpg"></div>
-        <div class="main-feature  left">
+        <div class="main-feature blue left">
           <b>Там есть мост дьявола</b>
           <div>№2</div>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
-      <div class="main-content grey clearfix">
-        <div class="main-feature  left">
+      <div class="main-content  clearfix">
+        <div class="main-feature grey left">
           <b>Небольшая площадь</b>
           <div>- №3 -</div>
           <p>Все достопримечательности находятся очень близко</p>
@@ -90,44 +90,56 @@
       </div>
       <div class="main-search-content">
         <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки,
+        <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="main-search-popup">
-            <div class="popup-header">
-              Поиск гостиницы в седоне
+        <div class="popup-opener">
+            Поиск гостиницы в седоне
+        </div>
+        <div class="main-search-popup">
+          <form class="popup-form ">
+            <div class="clearfix">
+              <div class="popup-column-left left">
+                <label class="left date-in-label" for="in-date">Дата заезда:</label>
+                <label class="left date-out-label" for="out-date">Дата выезда:</label>
+                <label for="adult-count" class="left adult-count-label">Взрослые:</label>
+              </div>
+              <div class="popup-column-right left">
+                <input class="date-input left" id="in-date" type=text value="24 апреля 2016">
+                <img class=" calendar in-date-calendar" src="img/calendar.png">
+                <input class="date-input" id="out-date" type=text value="4 июля 2016">
+                <img class=" calendar out-date-calendar left" src="img/calendar.png">
+                <button type="button" class="remove-adult left"></button>
+                <input class="adult-count left" id="adult-count " value="2">
+                <button type="button" class="add-adult left"></button>
+                <label for="child-count" class="left child-label">Дети:</label>
+                <button type="button" class="add-child right"></button>
+                <input class="child-count right" id="child-count " value="0">
+                <button type="button" class="remove-child right"></button
+              </div>
             </div>
-            <form class="popup-form">
-              <label for="in-date">Дата заезда:</label>
-              <input class="date-input" id="in-date" type=text value="24 апреля 2016">
-              <label for="out-date">Дата выезда:</label>
-              <input class="date-input" id="out-date" type=text value="4 июля 2016">
-              <label for="adult-count">Взрослые:</label>
-              <button type="button" class="remove-adult"></button>
-              <input class="adult-count" id="adult-count" value="2">
-              <button type="button" class="add-adult"></button>
-              <label for="child-count">Дети:</label>
-              <button type="button" class="child-adult"></button>
-              <input class="child-count" id="child-count" value="0">
-              <button type="button" class="add-child"></button>
-              <a href="#" class="find-hotels-button">Найти</a>
-            </form>
-          </div>
+            <a href="#" class="find-hotels-button">Найти</a>
+          </form>
+        </div>
       </div>
       <div class="google-map" id="main_google_map"></div>
     </main>
-    <footer class="footer">
+    <footer class="footer index clearfix">
       <div class="footer-container">
-        <section class="footer-hashtags">
+        <section class="footer-hashtags left">
           <a href="#">#visitsedona</a>
         </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#"><img src="http://placehold.it/20x20"></a>
-          <a class="social-btn social-btn-fb" href="#"><img src="http://placehold.it/20x20"></a>
-          <a class="social-btn social-btn-yt" href="#"><img src="http://placehold.it/20x20"></a>
+        <section class="footer-social left">
+          <div class="social-buttons clearfix">
+            <a class="social-btn social-btn-tw left" href="#"></a>
+            <a class="social-btn social-btn-fb left" href="#"></a>
+            <a class="social-btn social-btn-yt left" href="#"></a>
+        </div>
         </section>
-        <section class="footer-copyright">
-          <p>website by</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        <section class="footer-copyright left">
+          <div class="copyright-content clearfix">
+            <div class="left cop-text">website by</div>
+            <a class="left" href="https://htmlacademy.ru"><img src="img/html-academy-logo.png"></a>
+        </div>
         </section>
       </div>
     </footer>
