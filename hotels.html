@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Sedona hotels</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,43 +16,45 @@
           <li class="left">
             <a href="#">Фото и видео</a>
           </li left>
-          <li class="logo">
-            <a href="#"><img src="img/sedona-logo.png"></a>
+          <li class="right">
+            <a href="#">Гостиницы</a>
           </li>
           <li class="right">
             <a href="#">Карта штата</a>
           </li>
-          <li class="right">
-            <a href="#">Гостиницы</a>
-          </li>
         </ul>
+        <a class="sedona-logo" href="#"><img src="img/sedona-logo.png"></a>
       </nav>
     </header>
     <main class="hotels-content">
-      <div class="hotels-search-params clearfix">
+      <div class="hotels-search-content clearfix">
         <form>
           <div class="hotels-search-params left">
-            <b>Инфраструктура:</b>
-            <ul>
-              <li><label for="pool">Бассейн</label><input id="pool" type="checkbox"></li>
-              <li><label for="parking">Парковка</label><input id="parking" type="checkbox"></li>
-              <li><label for="wifi">Wi-fi</lable><input id="wifi" type="checkbox"></li>
-            </ul>
-            <b>Тип жилья:</b>
-            <ul>
-              <li><label for="hotel">Гостиница</label><input id="hotel" type="checkbox"></li>
-              <li><label for="motel">Мотель</label><input id="motel" type="checkbox"></li>
-              <li><label for="apart">Апартаменты</label><input id="apart" type="checkbox"></li>
-            </ul>
+            <div class="hotels-search-list left">
+              <b>Инфраструктура:</b>
+              <ul>
+                <li><input id="pool" type="checkbox"><label for="pool">Бассейн</label></li>
+                <li><input id="parking" type="checkbox"><label for="parking">Парковка</label></li>
+                <li><input id="wifi" type="checkbox"><label for="wifi">Wi-fi</lable></li>
+              </ul>
+            </div>
+            <div class="hotels-search-list left">
+              <b>Тип жилья:</b>
+              <ul>
+                <li><input id="hotel" type="checkbox"><label for="hotel">Гостиница</label></li>
+                <li><input id="motel" type="checkbox"><label for="motel">Мотель</label></li>
+                <li><input id="apart" type="checkbox"><label for="apart">Апартаменты</label></li>
+              </ul>
+            </div>
           </div>
-          <div class="hotels-search-params left">
+          <div class="hotels-slider left">
             <b>Стоимость в сутки (р):</b>
             <div class="hotels-search-prices">
               <div>ОТ
-                <input>0</input>
+                <input value="0">
               </div>
               <div>ДО
-                <input>3000</input>
+                <input value="3000">
               </div>
             </div>
             <div class="hotels-rheostat">
@@ -68,10 +71,10 @@
           <div class="hotels-search-found left">Найдено:3</div>
           <div class="hotels-search-count left">Сортировка:</div>
           <ul class="clearfix">
-            <li class="hotels-search-sort left"><a href="#">По цене</a></li>
-            <li class="hotels-search-sort left"><a href="#">По типу</a></li>
-            <li class="hotels-search-sort left"><a href="#">По рейтингу</a></li>
-            <li class="hotels-search-sort desc right"><a href="#"></a></li>
+            <li class="hotels-search-sort active text left"><a href="#">По цене</a></li>
+            <li class="hotels-search-sort text left"><a href="#">По типу</a></li>
+            <li class="hotels-search-sort text left"><a href="#">По рейтингу</a></li>
+            <li class="hotels-search-sort desc active right"><a href="#"></a></li>
             <li class="hotels-search-sort asc right"><a href="#"></a></li>
             
         </ul>
@@ -148,7 +151,7 @@
         <section class="footer-copyright left">
           <div class="copyright-content clearfix">
             <div class="left cop-text">website by</div>
-            <a class="left" href="https://htmlacademy.ru"><img src="img/html-academy-logo.png"></a>
+            <a class="left academy-logo" href="https://htmlacademy.ru"></a>
         </div>
         </section>
       </div>

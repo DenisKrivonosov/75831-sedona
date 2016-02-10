@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Sedona city</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,16 +16,14 @@
           <li class="left">
             <a href="#">Фото и видео</a>
           </li left>
-          <li class="logo">
-            <a href="#"><img src="img/sedona-logo.png"></a>
+          <li class="right">
+            <a href="#">Гостиницы</a>
           </li>
           <li class="right">
             <a href="#">Карта штата</a>
           </li>
-          <li class="right">
-            <a href="#">Гостиницы</a>
-          </li>
         </ul>
+        <a class="sedona-logo" href="#"><img src="img/sedona-logo.png"></a>
       </nav>
     </header>
     <main class="main-container">
@@ -47,17 +46,17 @@
       </div>
       <div class="main-content clearfix">
         <div class="main-feature white left">
-          <div class="main-content-picture"><img src="img/index-house.png"></div>
+          <div class="main-content-picture house"></div>
             <b>Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
         </div>
         <div class="main-feature white left">
-          <div class="main-content-picture"> <img src="img/index-burger.png"></div>
+          <div class="main-content-picture burger"></div>
           <b>Еда</b>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="main-feature white left">
-          <div class="main-content-picture"> <img src="img/index-gift.png"></div>
+          <div class="main-content-picture gift"></div>
           <b>Сувениры</b>
           <p>Не только китайского, но и местного производства!</p>
         </div>
@@ -105,9 +104,9 @@
               </div>
               <div class="popup-column-right left">
                 <input class="date-input left" id="in-date" type=text value="24 апреля 2016">
-                <img class=" calendar in-date-calendar" src="img/calendar.png">
+                <div class=" calendar in-date-calendar"></div>
                 <input class="date-input" id="out-date" type=text value="4 июля 2016">
-                <img class=" calendar out-date-calendar left" src="img/calendar.png">
+                <div class=" calendar out-date-calendar left"></div>
                 <button type="button" class="remove-adult left"></button>
                 <input class="adult-count left" id="adult-count " value="2">
                 <button type="button" class="add-adult left"></button>
@@ -138,7 +137,7 @@
         <section class="footer-copyright left">
           <div class="copyright-content clearfix">
             <div class="left cop-text">website by</div>
-            <a class="left" href="https://htmlacademy.ru"><img src="img/html-academy-logo.png"></a>
+            <a class="left academy-logo" href="https://htmlacademy.ru"></a>
         </div>
         </section>
       </div>
