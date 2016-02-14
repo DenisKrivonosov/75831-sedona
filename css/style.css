@@ -1,10 +1,10 @@
 @font-face {
-    font-family: OpenSansBold; 
-    src: url(../fonts/OpenSans-Bold.ttf); 
+  font-family: OpenSansBold; 
+  src: url(../fonts/OpenSans-Bold.ttf); 
 }
 @font-face {
-    font-family: PtSans; 
-    src: url(../fonts/PT_Sans.ttf); 
+  font-family: PtSans; 
+  src: url(../fonts/PT_Sans.ttf); 
 }
 
 #main_google_map {
@@ -16,7 +16,7 @@ body {
   background-color:#f2f2f2;
   min-width: 768px;
   max-width: 1200px;
-  font-family: PtSans;
+  font-family: "PtSans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ body {
   
 }
 .header-navigation li:nth-child(2) {
-    margin-right: 20%;
+  margin-right: 20%;
 }
 .sedona-logo {
   width:138px;
@@ -89,7 +89,7 @@ body {
   width:100%;
   height:510px;
   padding-top:75px;
- /*/ position:relative;*/
+  background-color: #d4e4ee;
   background-image: url(../img/intro-background.jpg);
   background-size: cover;
   background-position:center;
@@ -102,7 +102,6 @@ body {
   top:453px;
   width:100%;
   height:57px;
-  /*background-size: contain;*/
   background-repeat: no-repeat;
   background-image: url(../img/intro-shape.png);
   background-position:center;
@@ -169,6 +168,7 @@ main {
   height:254px;
 }
 .sedona-photo img {
+  background-color:#ffdedd;
   min-height: 254px;
   width:100%;
 }
@@ -221,6 +221,7 @@ p.main-reason-feature {
   margin: 0 auto;
 }
 .hotels-search-content {
+  background-color:#4b779c;
   background-image:url(../img/filter-background.jpg);
 }
 .main-search-content {
@@ -473,8 +474,14 @@ input[type="checkbox"] + label::before{
   background-position: -305px -62px;
 }
 input[type="checkbox"]:checked + label::before {
-    background-position: -17px -118px;
+  background-position: -17px -118px;
 }
+/*input[type="checkbox"][disabled]:checked + label::before {
+  background-position: -17px -118px;
+}
+input[type="checkbox"][disabled]:checked + label::before {
+  background-position: -17px -118px;
+}*/
 .price-filter {
   padding-top:28px;
   padding-right:6%;
@@ -673,6 +680,7 @@ input[type="checkbox"]:checked + label::before {
   margin-bottom: 5px;
 }
 .search-place-photo {
+  background-color:#d4e4ee;
   width: 135px;
   height: 90px;
 }
@@ -759,8 +767,8 @@ input[type="checkbox"]:checked + label::before {
   float: right;
 }
 .clearfix::after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+  content: " "; 
+  display: table;
   clear: both;
 }
 .main-container {
