@@ -10,17 +10,17 @@
     <header class="header">
       <nav class="header-navigation clearfix">
         <ul>
-          <li class="left">
+          <li class="">
             <a href="#">Информация</a>
           </li>
-          <li class="left">
+          <li class="">
             <a href="#">Фото и видео</a>
           </li left>
-          <li class="right">
-            <a href="#">Гостиницы</a>
-          </li>
-          <li class="right">
+          <li class="">
             <a href="#">Карта штата</a>
+          </li>
+          <li class="active">
+            <a href="#">Гостиницы</a>
           </li>
         </ul>
         <a class="sedona-logo" href="#"><img src="img/sedona-logo.png"></a>
@@ -47,35 +47,34 @@
               </ul>
             </div>
           </div>
-          <div class="hotels-slider left">
+          <div class="price-filter right">
             <b>Стоимость в сутки (р):</b>
-            <div class="hotels-search-prices">
-              <div>ОТ
-                <input value="0">
-              </div>
-              <div>ДО
-                <input value="3000">
-              </div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-            <div class="hotels-rheostat">
-              <div class="rheostat-handle-left"></div>
-              <div class="rheostat-handle-left"></div>
-              <div class="rheostat-progress"></div>
+            <div class="range-controls">
+              <div class="scale">
+              <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
-            <a href="#" class="button">Показать</a>
+            <button class="search-hotels-btn" type="submit">Показать</button>
           </div>
         </form>
       </div>
       <div class="hotels-search-result">
         <div class="result-sort clearfix">
-          <div class="hotels-search-found left">Найдено:3</div>
+          <div class="hotels-search-found left">Найдено: 3</div>
           <div class="hotels-search-count left">Сортировка:</div>
           <ul class="clearfix">
-            <li class="hotels-search-sort active text left"><a href="#">По цене</a></li>
-            <li class="hotels-search-sort text left"><a href="#">По типу</a></li>
-            <li class="hotels-search-sort text left"><a href="#">По рейтингу</a></li>
-            <li class="hotels-search-sort desc active right"><a href="#"></a></li>
-            <li class="hotels-search-sort asc right"><a href="#"></a></li>
+            <li class="hotels-search-sort active text "><a href="#">По цене</a></li>
+            <li class="hotels-search-sort text"><a href="#">По типу</a></li>
+            <li class="hotels-search-sort text"><a href="#">По рейтингу</a></li>
+            <li class="hotels-search-sort arrowasc asc "><a href="#"></a></li>
+            <li class="hotels-search-sort  arrowdesc active "><a href="#"></a></li>
+            
             
         </ul>
         </div>
@@ -92,9 +91,9 @@
               <a href="#" class="button order">Забронировать</a>
             </div>
           </div>
-          <div class="search-place-right left clearfix">
-            <div class="hotel-stars clearfix"><img class="right" src="img/4stars.png"></div>
-            <div class="hotel-rating right">Рейтинг:8,5</div>
+          <div class="search-place-right right ">
+            <div class="hotel-stars four"></div>
+            <div class="hotel-rating">Рейтинг:8,5</div>
           </div>
         </div>
         <div class="hotels-search-place clearfix">
@@ -110,9 +109,9 @@
               <a href="#" class="button order">Забронировать</a>
             </div>
           </div>
-          <div class="search-place-right left clearfix">
-            <div class="hotel-stars clearfix"><img class="right" src="img/2stars.png"></div>
-            <div class="hotel-rating right">Рейтинг8,9</div>
+          <div class="search-place-right right">
+            <div class="hotel-stars two"></div>
+            <div class="hotel-rating">Рейтинг8,9</div>
           </div>
         </div>
         <div class="hotels-search-place clearfix">
@@ -128,16 +127,16 @@
               <a href="#" class="button order">Забронировать</a>
             </div>
           </div>
-          <div class="search-place-right clearfix left">
-            <div class="hotel-stars clearfix"><img class="right" src="img/3stars.png"></div>
-            <div class="hotel-rating right">Рейтинг:9,2</div>
+          <div class="search-place-right right">
+            <div class="hotel-stars three"></div>
+            <div class="hotel-rating">Рейтинг:9,2</div>
           </div>
         </div>
       </div>
       
     </main>
-    <footer class="footer hotels clearfix">
-      <div class="footer-container">
+    <footer class="footer hotels">
+      <div class="footer-container clearfix">
         <section class="footer-hashtags left">
           <a href="#">#visitsedona</a>
         </section>

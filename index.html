@@ -10,20 +10,20 @@
     <header class="header">
       <nav class="header-navigation clearfix">
         <ul>
-          <li class="left">
+          <li class="">
             <a href="#">Информация</a>
           </li>
-          <li class="left">
+          <li class="">
             <a href="#">Фото и видео</a>
           </li left>
-          <li class="right">
-            <a href="#">Гостиницы</a>
-          </li>
-          <li class="right">
+          <li class="">
             <a href="#">Карта штата</a>
           </li>
+          <li class="">
+            <a href="#">Гостиницы</a>
+          </li>
         </ul>
-        <a class="sedona-logo" href="#"><img src="img/sedona-logo.png"></a>
+        <div class="sedona-logo" href="#"><img src="img/sedona-logo.png"></div>
       </nav>
     </header>
     <main class="main-container">
@@ -91,10 +91,11 @@
         <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <div class="popup-opener">
-            Поиск гостиницы в седоне
-        </div>
+           <div class="search-opener">
+              Поиск гостиницы в седоне
+          </div>
         <div class="main-search-popup">
+         
           <form class="popup-form ">
             <div class="clearfix">
               <div class="popup-column-left left">
@@ -103,9 +104,9 @@
                 <label for="adult-count" class="left adult-count-label">Взрослые:</label>
               </div>
               <div class="popup-column-right left">
-                <input class="date-input left" id="in-date" type=text value="24 апреля 2016">
+                <input class="date-input left" id="in-date" type=text placeholder="24 апреля 2016">
                 <div class=" calendar in-date-calendar"></div>
-                <input class="date-input" id="out-date" type=text value="4 июля 2016">
+                <input class="date-input" id="out-date" type=text placeholder="4 июля 2016">
                 <div class=" calendar out-date-calendar left"></div>
                 <button type="button" class="remove-adult left"></button>
                 <input class="adult-count left" id="adult-count " value="2">
@@ -122,8 +123,8 @@
       </div>
       <div class="google-map" id="main_google_map"></div>
     </main>
-    <footer class="footer index clearfix">
-      <div class="footer-container">
+    <footer class="footer index ">
+      <div class="footer-container clearfix">
         <section class="footer-hashtags left">
           <a href="#">#visitsedona</a>
         </section>
