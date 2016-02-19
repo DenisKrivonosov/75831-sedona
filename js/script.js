@@ -1,28 +1,35 @@
-// document.getElementById('search-opener').onclick = function() {
-//    popup =document.getElementById('search-popup'); 
-//   if(hasClass(popup, 'main-search-popup')) {
-//     popup.classList.add("fadeout");
-//   }
-//   else {
-//     console.log(2);
-//   }
-//   popup.classList.add('popup-animate');
-// }
+document.getElementById('search-opener').onclick = function(event) {
+    event.preventDefault();
+    console.log(123);
+    popup =document.getElementById('search-popup');
+  if(hasClass(popup, 'open')) {
+     popup.classList.remove("open");
+  }
+  else {
+    popup.classList.add("open");
+  }
+}
 
 function init() {
   var mapDiv = document.getElementById('main_google_map');
-    var map = new google.maps.Map(mapDiv, {
-      center: {lat: 34.898071, lng: -111.516274},
-      zoom: 9
-    });
+  var SedonaLatLng = {lat: 34.868397, lng:-111.762395};
+  var map = new google.maps.Map(mapDiv, {
+    center: {lat: 34.898071, lng: -111.516274},
+    zoom: 9
+  });
+  var marker = new google.maps.Marker({
+  position: SedonaLatLng,
+  map: map,
+  title: 'Sedona dream'
+  });
 }
-// hasClass = function(element, selector) {
-//   classList = element.classList;
-//     for (var i = 0, l = classList.length; i < l; i++) {
-//         if (classList[i] === selector) {
-//             return true;
-//         }
-//     }
+function  hasClass(element, selector) {
+  classList = element.classList;
+    for (var i = 0, l = classList.length; i < l; i++) {
+        if (classList[i] === selector) {
+            return true;
+        }
+    }
 
-//     return false;
-// }
+    return false;
+}

@@ -7,10 +7,11 @@
   src: url(../fonts/PT_Sans.ttf); 
 }
 
-#main_google_map {
+.google-map {
   width: 100%;
   height: 595px;
-  background-color: #CCC;
+  background-image: url(../img/map.jpg);
+  /*background-color: #CCC;*/
 }
 body {
   background-color:#f2f2f2;
@@ -255,17 +256,17 @@ p.main-reason-feature {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
-  margin-top:30px;
+  margin-top:34px;
   width:567px;
-  padding-top:29px;
-  padding-bottom:29px;
+  padding-top:32px;
+  padding-bottom:32px;
   background-color: #766357;
   color:white;
   font-size: 21px;
-  line-height: 26px;
 }
 
 .main-search-popup {
+  display: none;
   font-size: 14px;
   font-weight: bold;
   position: absolute;
@@ -440,17 +441,24 @@ p.main-reason-feature {
   outline:0;
 }
 
-.fadein, .fadeout {
-    opacity: 0;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
+@keyframes bounce {
+  0%   {
+    transform: translateY(-200px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.fadein {
-    opacity: 1;
+.main-search-popup.open {
+  display: block;
+  animation: bounce 1.2s;
 }
-
 /*.popup-animate  {
   overflow-y: hidden;
   max-height: 500px; /* approximate max height */
