@@ -12,9 +12,9 @@ document.getElementById('search-opener').onclick = function(event) {
 
 function init() {
   var mapDiv = document.getElementById('main_google_map');
-  var SedonaLatLng = {lat: 34.868397, lng:-111.762395};
+  var SedonaLatLng = {lat: 34.878397, lng:-111.762395};
   var map = new google.maps.Map(mapDiv, {
-    center: {lat: 34.898071, lng: -111.516274},
+    center: {lat: 34.757071, lng: -111.736274},
     zoom: 9
   });
   var marker = new google.maps.Marker({
