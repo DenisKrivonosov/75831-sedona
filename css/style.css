@@ -132,10 +132,10 @@ main {
     padding-left: 5%;
     padding-right: 5%;
 }
-.main-feature.blue.bridge {
+/*.main-feature.blue.bridge {
     padding-left: 7%;
     padding-right: 7%;
-}
+}*/
 .main-feature.blue,
 .main-feature.grey {
     min-height: 254px;
@@ -192,7 +192,7 @@ main {
     background-color: #81b3d2;
     color: white;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .main-feature.blue b,
@@ -217,7 +217,7 @@ main {
 .main-feature.grey {
     color: black;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 .main-content.grey {
     background-color: #eeeeee;
@@ -242,7 +242,8 @@ b.main-reason-feature {
     font-weight: bold;
 }
 p.main-reason-feature {
-    width: 500px;
+    padding-left: 6%;
+    padding-right: 6%;
     text-align: center;
     margin: 0 auto;
     font-size: 14px;
@@ -971,6 +972,7 @@ input[type="checkbox"]:checked + label::before {
     margin-right: 5px;
 }
 textarea:focus,
-input:focus {
+input:focus,
+button:focus {
     outline: none;
 }
