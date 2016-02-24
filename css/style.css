@@ -222,6 +222,20 @@ main {
 .main-content.grey {
     background-color: #eeeeee;
 }
+.main-content.city {
+    background:url(../img/true-city-photo.jpg);
+    background-color: #81b3d2;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position:top right;
+}
+.main-content.bridge {
+    background:url(../img/canyon-photo.jpg);
+    background-color: #81b3d2;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position:top left;
+}
 .sedona-photo {
     width: 66.666666%;
     height: 254px;
